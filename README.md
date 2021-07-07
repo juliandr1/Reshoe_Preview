@@ -50,8 +50,10 @@ An app that allows users to buy and sell new or used sneakers locally. This app 
 * Search screen
    * Users can view local shops.
    * Sellers' ratings and location shown on the map screen.
-* Seller Detailed Screen
-   * Buyers can view the gallery of shoe images and reviews.
+* Detailed Seller Screen
+   * Buyers can view the gallery of shoe images and reviews of the seller. Can favorite the seller to recieve notifications of new stock.
+* Detailed Shoe Screen
+    * Buyers can view the shoe in depth: description, price, and condition included. Can favorite the shoe for later.
 * Direct Message Screen
    * Users communicate with one another to discuss prices or potential drop-off location.
 
