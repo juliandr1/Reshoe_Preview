@@ -11,7 +11,7 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-A social media app specifically designed to help people connect and interact with local barbers. Users can rate barbers and provide feedback to others who are looking for select styles. Both barbers and users can post images of their haircuts, in order to give others an idea of the type of styles they want. Through the search process, users can filter by location, style, and price.
+An app that allows users to buy and sell new or used sneakers locally. This app allows local sneaker resell sellers to interact directly with customers on a streamlined app, while allowing buyers to find local sellers, instead of having to deal with long shipping times and hefty fees.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
@@ -66,31 +66,31 @@ A social media app specifically designed to help people connect and interact wit
 **Flow Navigation** (Screen to Screen)
 
 * Login
-   => Registration (if not account created)
-   => Home Timeline
+   - Registration (if not account created)
+   - Home Timeline
 * Registration
-   => Login (if account already created)
+   - Login (if account already created)
 * Home Timeline
-   => Detailed Shoe Screen
-   => Detailed Seller Screen
+   - Detailed Shoe Screen
+   - Detailed Seller Screen
 * Map screen
-   => Seller Detailed Screen 
+   - Seller Detailed Screen 
 * Detailed Seller Screen
-   => Directions Screen 
-   => Message Shop Screen
-   => Detailed Shoe Screen
-   => Home Timeline
+   - Directions Screen 
+   - Message Shop Screen
+   - Detailed Shoe Screen
+   - Home Timeline
 * Directions Screen
-   => Detailed Seller Screen
+   - Detailed Seller Screen
 * Message Shop Screen
-   => Detailed Seller Screen
+   - Detailed Seller Screen
 * Detailed Shoe Screen
-   => Home Timeline
-   => Detailed Seller Screen   
+   - Home Timeline
+   - Detailed Seller Screen   
 * Profile Screen
-   => Edit Account Info/Profile Picture
-   => Edit Payment Options
-   => Edit Settings
+   - Edit Account Info/Profile Picture
+   - Edit Payment Options
+   - Edit Settings
 
 ## Wireframes
 <img src="Wireframe.png" width=600>
