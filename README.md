@@ -131,10 +131,10 @@ Post
 Message
 | Property  | Type | Description |
 | ------------- | ------------- | ------------- |
-| author | Point<User>  | author of the message |
-| target | Point<User>  | user to whom the message was sent  |
+| author | Pointer (User)  | author of the message |
+| target | Pointer (User)  | user to whom the message was sent  |
 | body  | String |  body of the message |
-| createdAt  | DateTimel  | time when the message was sent|        
+| createdAt  | DateTime  | time when the message was sent|        
 | objectId  | String | unique ID for the message|
   
 Review
