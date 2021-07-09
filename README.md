@@ -102,10 +102,73 @@ An app that allows users to buy and sell new or used sneakers locally. This app 
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+
+User
+| Property  | Type | Description |
+| ------------- | ------------- | ------------- |
+| username  | String  | username of the user|
+| password  | String  | password of the user|
+| email  | String  | email associated with the user|
+| emailVerified | boolean | verification status of the email|
+| isSeller | boolean | determines which type of user|
+| profilePic | File | profile picture associated with the user|
+| description | String | brief description of the seller i.e., types of shoes they sell or certain guidelines for buying |
+| objectId  | String |unique ID for the user|
+
+Post
+| Property  | Type | Description |
+| ------------- | ------------- | ------------- |
+| author  | Pointer<User>  |  author of the post |
+| image  | File  | posted image |
+| caption  | String  | brief description of the post|
+| likesCount  | Number  | number of people who liked the post|
+| createdAt  | DateTime | time when the post was first uploaded|
+| updatedAt  | DateTime  | time when the post was last updated|
+| objectId  | String |unique ID for the post|
+
+Message
+| Property  | Type | Description |
+| ------------- | ------------- | ------------- |
+| author | Point<User>  | author of the message |
+| target | Point<User>  | user to whom the message was sent  |
+| body  | String |  body of the message |
+| createdAt  | DateTimel  | time when the message was sent|        
+| objectId  | String | unique ID for the message|
+  
+Review
+| Property  | Type | Description |
+| ------------- | ------------- | ------------- |
+| author | Point<User>  | author of the review |
+| target | Point<User>  | user to whom the review is meant for  |
+| body  | String |  body of the review |
+| rating  | Number |  given rating of the user |
+| createdAt  | DateTimel  | time when the review was published|        
+| objectId  | String | unique ID for the review|
+
 ### Networking
 - [Add list of network requests by screen ]
+  * Login Screen
+    ** (Read/GET) Query logged in user object
+  * Registration Screen
+    ** (Create/USER) Create a new user
+  * Home Screen
+    ** (Create/POST) Create a new like on a post
+    ** (Delete) Delete existing like
+    **  (READ/GET) Query all posts of liked users/posts
+  * Detailed Seller Screen
+    ** (Create/USER) Create a new favorite on a user
+    ** (Delete) Delete existing favorite 
+    ** (Create/USER) Create a new review of a user
+    ** (Delete) Delete existing review
+  * Messaging Screen
+    ** (Create/MESSAGE) Create a new message to a user
+  * Post Screen
+    ** (Create/POST) Create a new post 
+  * Profile Screen
+    ** (Update/PUT) Update user profile image
+    ** (Update/PUT) Update user preferences
+  
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
