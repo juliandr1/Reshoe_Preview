@@ -68,34 +68,37 @@ An app that allows users to buy and sell new or used sneakers locally. This app 
 **Flow Navigation** (Screen to Screen)
 
 * Login
-   - Registration (if not account created)
+   - Registration (if no account created)
    - Home Timeline
 * Registration
    - Login (if account already created)
+   - Home Timeline
 * Home Timeline
    - Detailed Shoe Screen
    - Detailed Seller Screen
-* Map screen
-   - Seller Detailed Screen 
+   - Seller Home Timeline
+   - Messaging Scren
+* Messaging Screen
+   - Specific Message screen
 * Detailed Seller Screen
    - Directions Screen 
-   - Message Shop Screen
+   - Specific Message Screen
+   - Review Screen
    - Detailed Shoe Screen
    - Home Timeline
 * Directions Screen
    - Detailed Seller Screen
-* Message Shop Screen
-   - Detailed Seller Screen
 * Detailed Shoe Screen
    - Home Timeline
+   - Buy Screen
    - Detailed Seller Screen   
 * Profile Screen
    - Edit Account Info/Profile Picture
-   - Edit Payment Options
    - Edit Settings
+   - Login Screen
 
 ## Wireframes
-<img src="Wireframe.png" width=600>
+<img src="wireframe.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -112,6 +115,7 @@ User
 | password  | String  | password of the user|
 | email  | String  | email associated with the user|
 | emailVerified | boolean | verification status of the email|
+| likedUsers | Array | sellers that a user has liked/users that liked a buyer|
 | isSeller | boolean | determines which type of user|
 | profilePic | File | profile picture associated with the user|
 | description | String | brief description of the seller i.e., types of shoes they sell or certain guidelines for buying |
@@ -123,6 +127,7 @@ Post
 | author  | Pointer<User>  |  author of the post |
 | image  | File  | posted image |
 | caption  | String  | brief description of the post|
+| usersLiked  | Array  | the ids of users whom liked the post|
 | likesCount  | Number  | number of people who liked the post|
 | createdAt  | DateTime | time when the post was first uploaded|
 | updatedAt  | DateTime  | time when the post was last updated|
@@ -169,6 +174,7 @@ Review
   * Profile Screen
     ** (Update/PUT) Update user profile image
     ** (Update/PUT) Update user preferences
+ 
   
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
